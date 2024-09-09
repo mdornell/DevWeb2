@@ -1,2 +1,3 @@
 model\dao\ConectionDAO.class
 control\ServletLocadora.class
+model\domain\Ator.class

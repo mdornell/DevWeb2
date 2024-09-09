@@ -12,7 +12,7 @@ public class ConectionDAO {
         String servidor = "localhost:5432";
         String usuario = "postgres";
         String senha = "postgres";
-        String nomeBanco = "poo2";
+        String nomeBanco = "videoLocadora";
         String url = "jdbc:postgresql://" + servidor + "/" + nomeBanco;
 
         String drive = "org.postgresql.Driver";
