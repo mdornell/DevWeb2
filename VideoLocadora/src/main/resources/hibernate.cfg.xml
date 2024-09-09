@@ -10,19 +10,12 @@
         <property name="hibernate.connection.username">postgres</property>
         <property name="hibernate.connection.password">postgres</property>
     
-        <property name="hibernate.hbm2ddl.auto">update</property>   
+        <property name="hibernate.hbm2ddl.auto">create</property>   
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
     
-        <mapping class="domain.TipoServico"></mapping>
-        <mapping class="domain.Pessoa"></mapping>
-        <mapping class="domain.Orcamento"></mapping>
-        <mapping class="domain.Material"></mapping>
-        <mapping class="domain.MaterialOrcamento"></mapping>
-        <mapping class="domain.MaterialOrcamentoPk"></mapping>
-        <mapping class="domain.Endereco"></mapping>
-        <mapping class="domain.Cliente"></mapping>
-        <mapping class="domain.Fornecedor"></mapping>
+        <!--<mapping class="domain.TipoServico"></mapping>-->
+       
     
     
     </session-factory>
