@@ -1,4 +1,4 @@
-package model.domain;
+package model.domain.controleAcervo;
 
 public class Ator {
     private String nome;
