@@ -1,2 +1,11 @@
-C:\Users\Marco\Documents\GitHub\VideoLocadora\src\main\java\control\ServletLocadora.java
-C:\Users\Marco\Documents\GitHub\VideoLocadora\src\main\java\model\dao\ConectionDAO.java
+D:\Github\DevWeb2\VideoLocadora\src\main\java\model\domain\controleAcervo\Classe.java
+D:\Github\DevWeb2\VideoLocadora\src\main\java\control\ServletLocadora.java
+D:\Github\DevWeb2\VideoLocadora\src\main\java\model\domain\controleAcervo\Diretor.java
+D:\Github\DevWeb2\VideoLocadora\src\main\java\model\domain\controleAcervo\Item.java
+D:\Github\DevWeb2\VideoLocadora\src\main\java\model\domain\atendimentoCliente\Locacao.java
+D:\Github\DevWeb2\VideoLocadora\src\main\java\model\domain\controleAcervo\Titulo.java
+D:\Github\DevWeb2\VideoLocadora\src\main\java\model\domain\controleAcervo\Ator.java
+D:\Github\DevWeb2\VideoLocadora\src\main\java\model\dao\ConectionDAO.java
+D:\Github\DevWeb2\VideoLocadora\src\main\java\model\domain\atendimentoCliente\Socio.java
+D:\Github\DevWeb2\VideoLocadora\src\main\java\model\domain\atendimentoCliente\Cliente.java
+D:\Github\DevWeb2\VideoLocadora\src\main\java\model\domain\atendimentoCliente\Depende.java
