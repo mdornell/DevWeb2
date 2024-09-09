@@ -30,7 +30,8 @@ public class ServletLocadora extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
+        String nome = request.getParameter("nome");
+        
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
@@ -40,77 +41,10 @@ public class ServletLocadora extends HttpServlet {
             out.println("<title>Servlet ServletLocadora</title>");
             out.println("</head>");
             out.println("<body>");
+            out.println("<h1>Servlet ServletLocadora at " + request.getContextPath() + "</h1>");
+            out.println("Nome: " + nome + "<br>");
             out.println("</body>");
             out.println("</html>");
-
         }
     }
-
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
-    /**
-     * Handles the HTTP <code>GET</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-//        processRequest(request, response);
-
-    }
-
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-//        processRequest(request, response);
-        String nome = request.getParameter("nome");
-        String cpf = request.getParameter("cpf");
-        String end = request.getParameter("endereco");
-        String sexo = request.getParameter("sexo");
-        String tipo = request.getParameter("tipo");
-        String comunicados = request.getParameter("comunicados");
-        String obs = request.getParameter("obs");
-        
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-        out.println(""
-                + "<!DOCTYPE html>"
-                + "<html>"
-                + "<head>"
-                + "<title>Servlet ServletLocadora</title>"
-                + "</head>"
-                + "<body>"
-                + "Nome : " + nome
-                + "<br> CPF : " + cpf
-                + "<br> End : " + end
-                + "<br> Sexo :" + sexo
-                + "<br> Tipo :" + tipo
-                + "<br> Comunicado : " + comunicados
-                + "<br> Obs : " + obs
-                + "</body>"
-                + "</html>");
-        }
-    }
-
-    /**
-     * Returns a short description of the servlet.
-     *
-     * @return a String containing servlet description
-     */
-    @Override
-    public String getServletInfo() {
-        return "Short description";
-    }// </editor-fold>
-
 }
