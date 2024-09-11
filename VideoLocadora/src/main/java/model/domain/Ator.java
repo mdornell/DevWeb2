@@ -5,9 +5,10 @@ import javax.persistence.*;
 @Entity
 public class Ator {
     @Id
+    @GeneratedValue ( strategy = GenerationType.IDENTITY)
     private int id;
     
-    @Column
+    @Column (name="nomeCliente", nullable = false)
     private String nome;
 
     public Ator() { // Construtor Vazio
