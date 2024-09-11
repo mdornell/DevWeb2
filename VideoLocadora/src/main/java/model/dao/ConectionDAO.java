@@ -44,5 +44,9 @@ public class ConectionDAO {
             throw new ExceptionInInitializerError(ex);
         }
     }
+    
+    public static void shutdown() {
+        getSessionFactory().close();
+    }
 }
 
