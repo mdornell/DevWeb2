@@ -14,9 +14,7 @@
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
     
-        <!--<mapping class="domain.TipoServico"></mapping>-->
+        <mapping class="mode.domain.controleAcervo.Ator"></mapping>
        
-    
-    
     </session-factory>
 </hibernate-configuration>

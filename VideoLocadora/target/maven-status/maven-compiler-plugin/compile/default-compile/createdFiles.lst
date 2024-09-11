@@ -1,2 +1,4 @@
 model\dao\ConectionDAO.class
 control\ServletLocadora.class
+control\GerInterface.class
+control\GerDorminio.class

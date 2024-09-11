@@ -1,25 +1,11 @@
-<<<<<<< HEAD
-C:\Users\Ronan\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\domain\controleAcervo\Classe.java
-C:\Users\Ronan\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\dao\ConectionDAO.java
-C:\Users\Ronan\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\domain\atendimentoCliente\Depende.java
-C:\Users\Ronan\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\domain\controleAcervo\Diretor.java
-C:\Users\Ronan\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\domain\controleAcervo\Titulo.java
-C:\Users\Ronan\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\domain\controleAcervo\Item.java
-C:\Users\Ronan\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\domain\controleAcervo\Ator.java
-C:\Users\Ronan\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\control\ServletLocadora.java
-C:\Users\Ronan\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\domain\atendimentoCliente\Cliente.java
-C:\Users\Ronan\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\domain\atendimentoCliente\Locacao.java
-C:\Users\Ronan\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\domain\atendimentoCliente\Socio.java
-=======
-D:\Github\DevWeb2\VideoLocadora\src\main\java\model\domain\controleAcervo\Classe.java
-D:\Github\DevWeb2\VideoLocadora\src\main\java\control\ServletLocadora.java
-D:\Github\DevWeb2\VideoLocadora\src\main\java\model\domain\controleAcervo\Diretor.java
-D:\Github\DevWeb2\VideoLocadora\src\main\java\model\domain\controleAcervo\Item.java
-D:\Github\DevWeb2\VideoLocadora\src\main\java\model\domain\atendimentoCliente\Locacao.java
-D:\Github\DevWeb2\VideoLocadora\src\main\java\model\domain\controleAcervo\Titulo.java
-D:\Github\DevWeb2\VideoLocadora\src\main\java\model\domain\controleAcervo\Ator.java
-D:\Github\DevWeb2\VideoLocadora\src\main\java\model\dao\ConectionDAO.java
-D:\Github\DevWeb2\VideoLocadora\src\main\java\model\domain\atendimentoCliente\Socio.java
-D:\Github\DevWeb2\VideoLocadora\src\main\java\model\domain\atendimentoCliente\Cliente.java
-D:\Github\DevWeb2\VideoLocadora\src\main\java\model\domain\atendimentoCliente\Depende.java
->>>>>>> 30654fa213809f644fdcfe95b33ca3d3de79ae31
+C:\Users\Marco\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\domain\controleAcervo\Item.java
+C:\Users\Marco\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\domain\controleAcervo\Classe.java
+C:\Users\Marco\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\dao\ConectionDAO.java
+C:\Users\Marco\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\control\ServletLocadora.java
+C:\Users\Marco\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\domain\atendimentoCliente\Locacao.java
+C:\Users\Marco\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\domain\controleAcervo\Ator.java
+C:\Users\Marco\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\domain\atendimentoCliente\Cliente.java
+C:\Users\Marco\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\domain\controleAcervo\Diretor.java
+C:\Users\Marco\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\domain\atendimentoCliente\Socio.java
+C:\Users\Marco\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\domain\atendimentoCliente\Depende.java
+C:\Users\Marco\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\domain\controleAcervo\Titulo.java
