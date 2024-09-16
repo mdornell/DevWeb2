@@ -1,5 +1,14 @@
+<<<<<<< HEAD
+C:\Users\Ronan\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\dao\GenericDAO.java
+C:\Users\Ronan\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\dao\AtorDAO.java
+C:\Users\Ronan\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\dao\ConectionDAO.java
+C:\Users\Ronan\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\domain\Ator.java
+C:\Users\Ronan\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\control\GerDorminio.java
+C:\Users\Ronan\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\control\ServletAtor.java
+=======
 C:\Users\Marco\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\dao\ConectionDAO.java
 C:\Users\Marco\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\control\ServletAtor.java
 C:\Users\Marco\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\application\AplCadastrarAtor.java
 C:\Users\Marco\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\control\GerDorminio.java
 C:\Users\Marco\Documents\GitHub\DevWeb2\VideoLocadora\src\main\java\model\domain\Ator.java
+>>>>>>> 4fb8653cdfee32e9b2d5e5278d8b4cd77df9fe63
