@@ -11,6 +11,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import java.util.List;
 import model.application.AplCadastrarAtor;
 import model.domain.Ator;
 
@@ -18,7 +19,7 @@ import model.domain.Ator;
  *
  * @author Marco
  */
-@WebServlet(name = "index", value= "/cadastrarAtor")
+@WebServlet(name = "index", value = "/cadastrarAtor")
 public class ServletAtor extends HttpServlet {
 
     /**
@@ -31,16 +32,30 @@ public class ServletAtor extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            String nome = request.getParameter("nome");
-            
-            AplCadastrarAtor aplC = new AplCadastrarAtor();
-            Ator a = new Ator(nome);
-            
-            aplC.inserirAtor(a);
-            
-        }
+//        response.setContentType("text/html;charset=UTF-8");
+//        try (PrintWriter out = response.getWriter()) {
+//            String nome = request.getParameter("nome");
+//            String id = request.getParameter("id");
+//
+//            AplCadastrarAtor aplA = new AplCadastrarAtor();
+//            
+//             Ator a;
+//            
+//            if(id == null){
+//               a =  new Ator(nome);
+//               aplA.inserirAtor(a);
+//            }else{
+//                int index =  Integer.parseInt(id);
+//                a =  new Ator(index,nome);
+//                aplA.atualizarAtor(a);
+//            }
+//            
+//            List<Ator> lAtor = aplA.listarAtor(Ator.class);
+//            
+//            request.setAttribute("array", lAtor);
+//            request.getRequestDispatcher("index.jsp").forward(request, response);
+//         
+//        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -55,7 +70,31 @@ public class ServletAtor extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+//        processRequest(request, response);
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            String nome = request.getParameter("nome");
+            String id = request.getParameter("id");
+
+            AplCadastrarAtor aplA = new AplCadastrarAtor();
+
+            Ator a;
+
+            if (id == null) {
+                a = new Ator(nome);
+                aplA.inserirAtor(a);
+            } else {
+                int index = Integer.parseInt(id);
+                a = new Ator(index, nome);
+                aplA.atualizarAtor(a);
+            }
+
+            List<Ator> lAtor = aplA.listarAtor(Ator.class);
+
+            request.setAttribute("array", lAtor);
+            request.getRequestDispatcher("index.jsp").forward(request, response);
+
+        }
     }
 
     /**
@@ -69,7 +108,29 @@ public class ServletAtor extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+//        processRequest(request, response);
+        response.setContentType("text/html");
+        AplCadastrarAtor aplCadastrarAtor = new AplCadastrarAtor();
+
+        //Editar
+        if (request.getParameter("hid").equals("1")) { //Editar
+            int id = Integer.parseInt(request.getParameter("id").trim());
+            String nome = request.getParameter("nome").trim();
+            Ator ator = new Ator(id,nome);
+            System.out.println("teve game?");
+            System.out.println(nome);
+            aplCadastrarAtor.atualizarAtor(ator);
+        } else { //Excluir
+            int id = Integer.parseInt(request.getParameter("id").trim());
+            String nome = request.getParameter("nome").trim();
+            Ator ator = new Ator(id,nome);
+            aplCadastrarAtor.excluirAtor(ator);
+        }
+
+        List<Ator> lista = aplCadastrarAtor.listarAtor(Ator.class);
+        request.setAttribute("array", lista);
+        request.getRequestDispatcher("index.jsp").forward(request, response);
+
     }
 
     /**

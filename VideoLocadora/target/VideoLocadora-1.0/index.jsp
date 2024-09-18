@@ -1,3 +1,4 @@
+<%@page import="java.util.List"%>
 <%@page import="model.application.AplCadastrarAtor"%>
 <%@page import="model.domain.Ator"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
@@ -33,7 +34,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Adicionar Ator</h5>
-                        <form method="post" action="cadastrarAtor">
+                        <form method="get" action="cadastrarAtor">
                             <div class="form-group">
                                 <label for="nome">Nome:</label>
                                 <input type="text" class="form-control" id="nome" name="nome" required>
@@ -43,24 +44,6 @@
                     </div>
                 </div>
             </section>
-            
-
-            <!-- Inserir Ator -->
-            <!-- Código JSP para Processar Inserção usando Hibernate -->
-            <%
-                String nome = request.getParameter("nome");
-
-                if (nome != null) {
-                    Ator ator = new Ator();
-                    ator.setNome(nome);
-
-                    AplCadastrarAtor dao = new AplCadastrarAtor();
-                    dao.inserirAtor(ator);
-
-                    out.println("<div class='alert alert-success'>Ator inserido com sucesso!</div>");
-                    
-                }
-            %>
 
             <!-- Atores -->
             <section class="Atores">
@@ -69,13 +52,43 @@
                         <thead class="thead-light">
                             <tr>
                                 <th>Nome</th>
-                                <th>Options</th>
+                                <th>Ações</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <%-- Aqui vocÃª pode carregar Ators do banco de dados --%>
                             <%
+                                // Obtendo a lista de atores da requisição
+                                List<Ator> lista = (List<Ator>) request.getAttribute("array");
 
+                                if (lista != null) {
+                                    for (Ator ator : lista) {
+                            %>
+                            <tr>
+                                <td><%= ator.getId()%>
+                                </td>
+                                <td><%= ator.getNome()%>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-primary" onclick="editarNome(this)">Editar</button>
+
+                                    <!-- Formulário para exclusão de ator -->
+                                    <form method="post" action="cadastrarAtor" style="display:inline;">
+                                        <input type="hidden" name="id" value="<%= ator.getId()%>">
+                                        <input type="hidden" name="nome" value="<%= ator.getNome()%>">
+                                        <input type="hidden" name="hid" value="2">
+                                        <button type="submit" class="btn btn-danger">Excluir</button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <%
+                                }
+                            } else {
+                            %>
+                            <tr>
+                                <td colspan="3">Nenhum ator encontrado.</td>
+                            </tr>
+                            <%
+                                }
                             %>
                         </tbody>
                     </table>

@@ -1,7 +1,4 @@
 model\dao\ConectionDAO.class
-<<<<<<< HEAD
-=======
 control\ServletAtor.class
->>>>>>> 4fb8653cdfee32e9b2d5e5278d8b4cd77df9fe63
 control\GerDorminio.class
 model\domain\Ator.class
