@@ -51,6 +51,7 @@
                     <table class="table table-bordered" id="tabAtores">
                         <thead class="thead-light">
                             <tr>
+                                <th>Id</th>
                                 <th>Nome</th>
                                 <th>Ações</th>
                             </tr>

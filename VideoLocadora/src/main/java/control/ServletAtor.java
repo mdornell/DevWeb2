@@ -19,7 +19,7 @@ import model.domain.Ator;
  *
  * @author Marco
  */
-@WebServlet(name = "index", value = "/cadastrarAtor")
+@WebServlet(name = "cadastrarAtor", value = "/cadastrarAtor")
 public class ServletAtor extends HttpServlet {
 
     /**
@@ -32,28 +32,8 @@ public class ServletAtor extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-//        response.setContentType("text/html;charset=UTF-8");
-//        try (PrintWriter out = response.getWriter()) {
-//            String nome = request.getParameter("nome");
-//            String id = request.getParameter("id");
-//
-//            AplCadastrarAtor aplA = new AplCadastrarAtor();
-//            
-//             Ator a;
-//            
-//            if(id == null){
-//               a =  new Ator(nome);
-//               aplA.inserirAtor(a);
-//            }else{
-//                int index =  Integer.parseInt(id);
-//                a =  new Ator(index,nome);
-//                aplA.atualizarAtor(a);
-//            }
-//            
-//            List<Ator> lAtor = aplA.listarAtor(Ator.class);
-//            
-//            request.setAttribute("array", lAtor);
-//            request.getRequestDispatcher("index.jsp").forward(request, response);
+         response.setContentType("text/html;charset=UTF-8");
+         request.getRequestDispatcher("index.jsp").forward(request, response);
 //         
 //        }
     }
@@ -117,8 +97,6 @@ public class ServletAtor extends HttpServlet {
             int id = Integer.parseInt(request.getParameter("id").trim());
             String nome = request.getParameter("nome").trim();
             Ator ator = new Ator(id,nome);
-            System.out.println("teve game?");
-            System.out.println(nome);
             aplCadastrarAtor.atualizarAtor(ator);
         } else { //Excluir
             int id = Integer.parseInt(request.getParameter("id").trim());

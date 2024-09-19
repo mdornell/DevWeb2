@@ -1,4 +1,3 @@
 model\dao\ConectionDAO.class
 control\ServletAtor.class
-control\GerDorminio.class
 model\domain\Ator.class

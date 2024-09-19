@@ -6,8 +6,8 @@ import model.dao.GenericDAO;
 
 public class AplCadastrarAtor {
     
-    public void inserirAtor(Ator ator) {
-        GenericDAO.inserir(ator);
+    public void inserirAtor(Ator ator) {            
+          GenericDAO.inserir(ator);
     }
 
     public List<Ator> listarAtor(Class c) {
